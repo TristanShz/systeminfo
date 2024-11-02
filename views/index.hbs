@@ -1,0 +1,31 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>System Information</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 12px } pre {
+      background-color: #f4f4f4; padding: 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>System Information</h1>
+    <div>
+      <h2>Operating System</h2>
+      <p>Type: {{info.os.type}}</p>
+      <p>Release: {{info.os.release}}</p>
+      <p>Architecture: {{info.os.arch}}</p>
+      <p>Hostname: {{info.os.hostname}}</p>
+    </div>
+    <div>
+      <h2>Memory</h2>
+      <p>Total: {{info.memory.total}}</p>
+      <p>Free: {{info.memory.free}}</p>
+    </div>
+    <div>
+      <h2>Processor</h2>
+      <p>Model: {{info.cpu.model}}</p>
+      <p>Number of Cores: {{info.cpu.cores}}</p>
+    </div>
+  </body>
+</html>
